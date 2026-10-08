@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pearl — a disciplined Bubble.io engineering agent</title>
+<meta name="description" content="Pearl is a savepoint-first Bubble.io engineering agent for pi: doctrine skill, REST + MCP wires, self-gating writes."/>
+<meta property="og:title" content="Pearl 🦪"/>
+<meta property="og:description" content="A disciplined Bubble.io engineering agent for pi — layer by layer, never one reckless pour."/>
+<meta property="og:image" content="https://raw.githubusercontent.com/pararchy/para-pearl/main/assets/banner.png"/>
+<style>
+  :root { --ink:#eafaf9; --dim:#8fb9bb; --teal:#7fcfd4; --bg:#060f11; --card:#0b1f22; --line:#1d4a4f; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--ink); font-family:system-ui,-apple-system,sans-serif; line-height:1.6; }
+  main { max-width:820px; margin:0 auto; padding:48px 24px 96px; }
+  img.banner { width:100%; border-radius:16px; border:1px solid var(--line); }
+  h1 { font-size:2.6rem; letter-spacing:.35em; margin:32px 0 4px; }
+  .tag { color:var(--teal); font-family:ui-monospace,monospace; font-size:.95rem; }
+  p.sub { color:var(--dim); margin:18px 0 28px; font-size:1.1rem; }
+  a.btn { display:inline-block; background:var(--teal); color:#062225; font-weight:700;
+          padding:12px 26px; border-radius:10px; text-decoration:none; margin-right:12px; }
+  a.ghost { display:inline-block; border:1px solid var(--line); color:var(--ink);
+            padding:12px 26px; border-radius:10px; text-decoration:none; }
+  .chain { background:var(--card); border:1px solid var(--line); border-radius:12px;
+           padding:20px 24px; font-family:ui-monospace,monospace; color:var(--teal);
+           margin:36px 0; overflow-x:auto; white-space:nowrap; }
+  h2 { margin:40px 0 14px; font-size:1.35rem; }
+  ul { padding-left:22px; color:var(--dim); }
+  li { margin:6px 0; } li b { color:var(--ink); font-weight:600; }
+  footer { margin-top:64px; color:var(--dim); font-size:.85rem; border-top:1px solid var(--line); padding-top:20px; }
+  code { background:var(--card); padding:2px 7px; border-radius:6px; font-size:.9em; }
+</style>
+</head>
+<body>
+<main>
+  <img class="banner" src="https://raw.githubusercontent.com/pararchy/para-pearl/main/assets/banner.png" alt="Pearl banner"/>
+  <h1>PEARL</h1>
+  <div class="tag">layer by layer, never one reckless pour</div>
+  <p class="sub">A disciplined <b>Bubble.io</b> engineering agent for
+    <b>pi</b>. She reads before she writes, gates every destructive call behind
+    your consent, and hands off with a review — not a pile of silent edits.</p>
+
+  <a class="btn" href="https://github.com/pararchy/para-pearl">★ Star on GitHub</a>
+  <a class="ghost" href="https://github.com/pararchy/para-pearl#install">Install</a>
+
+  <div class="chain">PLAN → INSPECT → SAVEPOINT → IMPLEMENT → VERIFY → REVIEW → HAND OFF</div>
+
+  <h2>Why Pearl?</h2>
+  <ul>
+    <li><b>Doctrine-driven</b> — a skill file teaches a non-negotiable engineering chain, not just a bag of tools.</li>
+    <li><b>Two wires into the shell</b> — your app's Data/Workflow REST APIs, plus the official Bubble MCP for editor-level work.</li>
+    <li><b>Self-gating</b> — an interceptor watches every Bubble-bound call. Live writes and deletes ask first; mutations without a savepoint ask first.</li>
+    <li><b>Legible</b> — <code>/pearl</code> shows the session ledger: savepoint state, mutations written, calls gated.</li>
+  </ul>
+
+  <h2>Quick start</h2>
+  <ul>
+    <li>Clone the repo, copy <code>extensions/*.ts</code> into <code>~/.pi/agent/extensions/</code> and <code>skills/pearl-bubble</code> into <code>~/.pi/agent/skills/</code>.</li>
+    <li>Set <code>BUBBLE_APP_HOST</code> and <code>BUBBLE_API_TOKEN</code> — no secrets in source, ever.</li>
+    <li>Point her at your shell. She runs <code>meta</code> first, always.</li>
+  </ul>
+
+  <footer>
+    MIT © <a href="https://parastus.me" style="color:var(--teal)">pararchy</a> ·
+    <a href="https://github.com/pararchy/para-pearl" style="color:var(--teal)">pararchy/para-pearl</a>
+  </footer>
+</main>
+</body>
+</html>

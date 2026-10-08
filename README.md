@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/banner.png" alt="Pearl — a disciplined Bubble.io engineering agent" width="100%"/>
+
 # 🦪 Pearl
 
 **A disciplined Bubble.io engineering agent — layer by layer, never one reckless pour.**

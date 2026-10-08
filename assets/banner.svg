@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="75%">
+      <stop offset="0%" stop-color="#123034"/>
+      <stop offset="60%" stop-color="#0b1f22"/>
+      <stop offset="100%" stop-color="#060f11"/>
+    </radialGradient>
+    <radialGradient id="pearl" cx="38%" cy="32%" r="80%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="45%" stop-color="#cfeef0"/>
+      <stop offset="80%" stop-color="#7fcfd4"/>
+      <stop offset="100%" stop-color="#3d8b91"/>
+    </radialGradient>
+    <linearGradient id="shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1d4a4f"/>
+      <stop offset="100%" stop-color="#0d2b2e"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="18" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#bg)"/>
+
+  <!-- faint nacre rings -->
+  <g fill="none" stroke="#2a5a5e" stroke-width="1.5" opacity="0.35">
+    <circle cx="640" cy="300" r="130"/>
+    <circle cx="640" cy="300" r="180"/>
+    <circle cx="640" cy="300" r="235"/>
+    <circle cx="640" cy="300" r="295"/>
+  </g>
+
+  <!-- shell -->
+  <path d="M 470 340 A 175 175 0 0 1 810 340 Q 760 415 640 420 Q 520 415 470 340 Z"
+        fill="url(#shell)" stroke="#2f6b6f" stroke-width="3"/>
+  <path d="M 470 340 A 175 175 0 0 1 810 340" fill="none" stroke="#3d8b91" stroke-width="2" opacity="0.6"/>
+
+  <!-- pearl -->
+  <circle cx="640" cy="300" r="62" fill="url(#pearl)" filter="url(#glow)"/>
+  <ellipse cx="618" cy="278" rx="18" ry="11" fill="#ffffff" opacity="0.85" transform="rotate(-20 618 278)"/>
+
+  <!-- title -->
+  <text x="640" y="505" text-anchor="middle" font-family="DejaVu Sans, sans-serif"
+        font-size="88" font-weight="bold" fill="#eafaf9" letter-spacing="14">PEARL</text>
+  <text x="640" y="565" text-anchor="middle" font-family="DejaVu Sans Mono, monospace"
+        font-size="26" fill="#8fd6d9" letter-spacing="3">PLAN → INSPECT → SAVEPOINT → IMPLEMENT → VERIFY</text>
+  <text x="640" y="605" text-anchor="middle" font-family="DejaVu Sans, sans-serif"
+        font-size="21" fill="#5f979b">a disciplined Bubble.io engineering agent for pi</text>
+</svg>
