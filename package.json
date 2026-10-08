@@ -1,0 +1,18 @@
+{
+  "name": "para-pearl",
+  "version": "0.1.0",
+  "description": "Pearl — a disciplined Bubble.io engineering agent for pi. Doctrine skill + REST wire + self-gating savepoint checks.",
+  "type": "module",
+  "keywords": ["bubble", "bubble-io", "nocode", "ai-agent", "pi-coding-agent", "mcp"],
+  "license": "MIT",
+  "author": "pararchy (https://parastus.me)",
+  "homepage": "https://pearl.parastus.me",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pararchy/para-pearl"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  }
+}
